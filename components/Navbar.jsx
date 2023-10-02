@@ -1,9 +1,34 @@
+
+// import Image from 'next/image'
+// import React from 'react'
+// import { UserButton } from "@clerk/nextjs";
+// import { useUser } from "@clerk/clerk-react";
+
+//   const { isSignedIn, user, isLoaded } = useUser();
+//   return isSignedIn&&(
+//     <div className='flex justify-between
+//      p-3 px-10 border-b-[1px] shadow-sm'>
+//         <div className='flex gap-10 items-center'>
+//             <Image src='/logo.png'
+//             alt='logo'
+//             width={120}
+//             height={60}
+//             />
+          
+//         </div>
+//         <UserButton afterSignOutUrl="/"/>
+//     </div>
+//   )
+// }
+"use client"
+
 import Image from "next/image";
 import { UserButton } from "@clerk/nextjs";
+import { useUser } from "@clerk/clerk-react";
 
 const Navbar = () => {
-
-    return (
+    const { isSignedIn, user, isLoaded } = useUser();
+    return isSignedIn &&(
         <div className="bg-[#DCD5DC] text-[#769ABE] h-[64px] w-full fixed  flex justify-between items-center px-10 shadow">
 
             <div className="flex items-center gap-6 max-md:gap-3 ">

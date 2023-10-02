@@ -11,6 +11,7 @@
   "dependencies": {
     "@clerk/nextjs": "^4.25.1",
     "@headlessui/react": "^1.7.17",
+    "framer-motion": "^10.16.4",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
