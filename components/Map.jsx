@@ -24,18 +24,18 @@ export default function Map() {
     const markers = [
 
         {
-            geocode: [50.7797921, 6.1004554],
+            geocode: [8.7832, 34.5085],
             popUp: "digitalHUB Aachen e.V. in DIGITAL CHURCH"
         },
         {
-            geocode: [50.7813944, 6.1010656, 17],
+            geocode: [8.7832, 34.5085],
             popUp: "Ludwig Forum for International Art"
         }
     ];
-    // 50.7815477,6.1085626
+  
 
     return (
-        <MapContainer center={[50.7797268, 6.100391]} zoom={13} className="h-full w-full rounded">
+        <MapContainer center={[8.7832, 34.5085]} zoom={13} className="h-full w-full rounded">
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

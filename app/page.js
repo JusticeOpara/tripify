@@ -21,8 +21,8 @@ export default function Home() {
   return (
     <main>
       <div className="bg-[#1A385A]  flex h-[100vh] w-full fixed overflow-y-auto mt-[70px]">
-        <div className=" w-[76%] max-lg:w-[100%] h-[1160px]  px-2 max-sm:items-center bg-gray-400">
-          <div className="m-8 bg-orange-100 flex-grow-0 flex-shrink-0 basis-[55vw] flex flex-col gap-5">
+        <div className=" w-[76%] max-lg:w-[100%]  h-[1160px]  px-2 max-sm:items-center ">
+          <div className="m-8 bg-orange-100 flex-grow-0 flex-shrink-0 basis-[55vw] flex flex-col gap-5 max-sm:m-0 ">
             <h1 className="text-xl font-bold font-clashDisplay">
               Where Can I Travel?
             </h1>
@@ -33,7 +33,7 @@ export default function Home() {
            
             <div className=" bg-white border-1px grid grid-cols-[1fr,1fr] gap-4 py-4 min-h-[10rem] ">
               <div className="flex flex-row justify-stretch items-center bg-red-500 gap-3">
-                <div className="bg-blue-500 w-[2.6rem] h-[2.3rem]  rounded-[50%] flex justify-center items-center">
+                <div className="bg-blue-500 w-[2.6rem] h-[2.3rem] rounded-[50%] flex justify-center items-center">
                   <Image src="/bahamas-flag.svg" className="" width={25} height={18} alt="flag" />
                 </div>
 
@@ -122,7 +122,7 @@ export default function Home() {
               <div className="rounded bg-white cursor-pointer w-fit">
                 <Listbox value={selectedPerson} onChange={setSelectedPerson}>
                   <div className="relative w-fit z-10">
-                    <Listbox.Button className="relative w-full min-w-[300px] flex justify-between items-center cursor-default rounded-lg bg-blue-500  py-2 px-3 text-left shadow-md sm:text-sm border">
+                    <Listbox.Button className="relative w-full flex justify-between items-center cursor-default rounded-lg bg-blue-500  py-2 px-3 text-left shadow-md sm:text-sm border">
                       <span className="block truncate">
                         {" "}
                         {selectedPerson.name}
@@ -173,6 +173,7 @@ export default function Home() {
             </div>
 
             <Card />
+           
             <div className="w-full text-right pr-[1rem] font-satoshi text-xs ">
               you can vist this site for more information
             </div>
