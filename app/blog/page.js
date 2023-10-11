@@ -1,10 +1,9 @@
 "use client";
 import { useState, useEffect, useContext } from "react";
-// import PostsContext from "../context/PostsContext";
 import axios from "axios";
-import Tag from "@/components/cards/Tag";
-import BlogCard from "@/components/cards/BlogCard";
-import PostsContext from "@/context/PostsContext";
+import Tag from "../../components/Tag"
+import BlogCard from "../../components/BlogCard";
+import PostsContext from "../../context/PostsContext";
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -93,7 +92,7 @@ export default function Home() {
                   title={post.title}
                   image={post.img}
                   key={post.title}
-                  desc={post.subheading}
+                  desc={post.content}
                 />
               );
             })}

@@ -6,12 +6,12 @@ const BlogCard = ({ tag, title, image, id, desc }) => {
     <div>
       <Link href={`/post/${id}`}>
         <div className="rounded-lg object-cover">
-            {/* <Image /> */}
-          <img
+          <Image
             src={image}
             alt={title}
             className="rounded-t-lg object-cover h-40 w-full"
           />
+
           <div className="p-4">
             <div className="text-sm font-medium text-gray-400">{tag}</div>
             <p className="text-cl font-semibold text-gray-800 block mt-2 h-10">
